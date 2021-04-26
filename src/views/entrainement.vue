@@ -12,8 +12,10 @@
 
     <div>
       <h5 style="color:black;">Entrainement numéro : {{ idIndex }}</h5>
+       {{  }}
       <b-card class="entrainement" sub-title="Votre entrainement est composé des exercices suivants : "> <br>
         <div v-for="exercice_entrainement in entrainement" :key="exercice_entrainement.identrainement_exercice">
+          
           <p>
            {{ exercice_entrainement.nomExercice }} <b-button size="sm" variant="danger" v-on:click=" deleteExerciceEnt(exercice_entrainement.identrainement_exercice)">
               Supprimer cet exercice</b-button>

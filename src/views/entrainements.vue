@@ -33,7 +33,10 @@
       <li v-for="(entrainement,index) in entrainementList" :key="entrainement">
           <div class="container">
             <div class="row">
+
+              
                 <div class="col">
+                
                     <Entrainement
           v-bind:entrainement="entrainement" 
           v-bind:idIndex ="index"
@@ -71,7 +74,7 @@ export default {
       entrainementList: [],
       exerciceList:"",
       entrainementNew: {
-        repos: 4
+        repos: 0
       },
   // @event_add_exercice="addExerciceEnt"
       url: "http://localhost:8000/api/"

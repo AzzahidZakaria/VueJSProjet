@@ -73,7 +73,7 @@ export default {
 
          ],
          url: 'http://localhost:8000/api/exerciceList/New/',
-         url2:'http://localhost:8000/api/addExercice',
+         
          
       }
      },
@@ -93,21 +93,11 @@ export default {
          })
          this.$router.push({name : "home"}) // retour vers route de la page principale ayant nom 'home'
      },
-     get_categorie() {
-         axios //déclarer Axios, qui va aller chercher l'info dans l'API
-         .get(this.url2) //url de la méthode appelée
-         .then((response) => { //réponse avec param 'response'
-             this.categorieList = response.data //charger le this.reading est envoyé dedans les données récupérées de l'API.
-             console.log(this.categorieList);
-         })
-         .catch((error) => {
-             console.log(error);
-         });
-     }
+     
      }, 
      mounted() {
 
-       this.get_categorie();
+       
      }
 };
 </script>
