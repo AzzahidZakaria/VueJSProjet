@@ -1,17 +1,16 @@
 <template>
-  <div class="newserie">
+  <div class="">
 
      <p class="welcome">Workout App <br ></p>
     <h1>Ajoute un exercice</h1>
-       <!-- <table> -->
-    <!-- </table> -->
+       
 
   
 
 <div class="formulaire">
 <p>  Nom exercice :  <input type="text" v-model="exercice.nomExercice"></p>
 <p>  Difficulté :
-<!-- <p>  Difficulté :  <input type="text" v-model="exercice.difficulty"> -->
+
 
 <select v-model="exercice.difficulty">
   <option disabled value="">Choisissez</option>
@@ -32,7 +31,7 @@
     v-model="exercice.description"
   ></textarea> </p>
 
-<!-- <p>  Description <input type="textarea" v-model="exercice.description"></p> -->
+
 <p>  Catégorie : <input type="number"  min="1" max="7" v-model="exercice.categorie"></p>
 <p> Introduisez le numéro correspondant à la catégorie d'exercice :  <br>
   <b>1</b> Pectoraux <br>
@@ -102,9 +101,7 @@ export default {
 };
 </script>
 <style scoped>
-h1{
-  color: black;
-}
+
 
 .welcome {
   text-align: center;
@@ -112,18 +109,8 @@ h1{
   padding-top: 5px;
   background-color: #e0ffe4;
 }
-p{
-  font-family: Arial, Helvetica, sans-serif;
-  color : black;
-}
-table
-{
-margin: auto;
-}
-td
-{
-text-align :center;
-}
+
+
 .formulaire
 {
         background-color: #dae9ec;

@@ -129,7 +129,7 @@ export default {
     updateExercice(exercice) {
       console.log(exercice);
       axios
-        .put(this.url+"Update/" + exercice.idexercice, exercice) //url de la méthode appelée: envoie de la lecture modifiée
+        .put(this.url+"Update/" + exercice.idexercice, exercice) 
         .then(response => {
           console.log(response.data);
           this.get_exerciceList();
@@ -150,22 +150,6 @@ export default {
 <!--CSS-->
 <style scoped>
 
-
-table {
- margin-left: 6em;
- margin-right: 6em;
-
-}
-th {
-  text-align: center;
-  background-color: darkseagreen;
-}
-tr {
-  letter-spacing: 0.5px;
-}
-/* td{
-  border : solid 1px;
-} */
 
 
 p {

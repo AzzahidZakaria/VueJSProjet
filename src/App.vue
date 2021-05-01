@@ -7,7 +7,7 @@
       <router-link to="/">
         Exercices </router-link> 
         
-        <!--home-->
+        
         <span style="color:black;">|</span>
         <router-link to="/newExercice"> 
       Add Exercices
@@ -104,8 +104,6 @@
 export default {
   data() {
     return {
-      lightColor: '110, 175, 75',
-      darkColor: '100, 165, 65',
       cssClass: 'green',
     };
   },
@@ -116,55 +114,33 @@ export default {
 html{
   height: 100%;
 }
-.green #nav a {
-  color: rgb(110, 175, 75);
-}
-.green #nav a.router-link-exact-active {
-  color: rgb(110, 175, 75);
-}
-body{
- 
-
-  
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-  /* Background image is fixed in the viewport so that it doesn't move when
-     the content's height is greater than the image's height */
-  background-attachment: fixed;
-  /* This is what makes the background image rescale based
-  on the container's size */
-  background-size: cover;
-  height: 100vh;
-}
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  text-align: center;
-  /* vertical-align: center;
-  color: rgb(27, 23, 23);
-  height: 100%;
-  margin: 0;
-  padding: 0; */
-}
-#nav {
-  
-  padding: 15px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#nav a {
+ #nav a {
+  color: rgb(126, 120, 209);
   font-weight: bold;
   font-size: 30px;
   text-decoration: none;
   padding: 10px;
   margin: 5px;
 }
-#nav a.router-link-exact-active {
-  color: rgb(120, 95, 195);
+ #nav a.router-link-exact-active {
+  color: rgb(67, 19, 201);
 }
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  text-align: center;
+  
+}
+#nav {
+  color: rgb(126, 120, 209);
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 
 
