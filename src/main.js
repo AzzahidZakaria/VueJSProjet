@@ -11,7 +11,4 @@ Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 
-new Vue({ //instance Vue
-  router, //import router instance vue
-  render: h => h(App),
-}).$mount('#app'); //lien avec sélecteur index.html
+new Vue({ router,  render: h => h(App),}).$mount('#app'); 

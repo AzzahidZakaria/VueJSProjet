@@ -4,24 +4,20 @@
       <b-nav>  
 
         <img src="./assets/WorkoutApp.png" alt="" style="width:70px; height:70px;">
-      <router-link to="/">
-        Exercices </router-link> 
-        
-        
-        <span style="color:black;">|</span>
-        <router-link to="/newExercice"> 
-      Add Exercices
-      </router-link>
 
-      <span style="color:black;">|</span>
-      <router-link to="/entrainements"> 
-      Entrainements
-      </router-link>
+      <router-link to="/"> Exercices </router-link> 
+        
+        
+      <router-link to="/newExercice">  Add Exercices </router-link>
+
+      
+      <router-link to="/entrainements">  Entrainements </router-link>
 
     
      </b-nav>
 
     </div>
+    
     <transition name="fade">
       <router-view/>
     </transition>

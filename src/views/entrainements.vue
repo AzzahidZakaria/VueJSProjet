@@ -64,10 +64,10 @@
 // @ is an alias to /src
 import axios from "axios";
 import Entrainement from "./entrainement.vue";
-import NewEntrainement from "./newEnt.vue";
+
 
 export default {
-  components: { Entrainement, NewEntrainement },
+  components: { Entrainement },
   name: "EntrainementList",
   data() {
     return {
