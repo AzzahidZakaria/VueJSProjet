@@ -22,13 +22,15 @@
 <script>
 export default {
   name: "updateExercice",
-  props: ["exercice", "exercice"], // livre concerné par la modification
+  props: ["exercice", "exercice"], 
+
   data() {
     return {
       showInput: false
     };
   },
   methods: {
+    // je créé un évenement pour communiquer entre le compos enfant updateEx et le compos parent Home
     updateExercice(exercice) {
       this.$emit("event_update", exercice);
       this.showInput = false;
