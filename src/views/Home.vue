@@ -82,7 +82,7 @@ import Deleteexercice from "./deleteexercice.vue";
 // import de la MàJ de la lecture
 export default {
   name: "home", // nom route
-  components: { updateExercice, Deleteexercice }, //définition élément personnalisé "lectures" dans l'instance components
+  components: { updateExercice, Deleteexercice }, 
   data() {
     // lié à l'instance de vue créée et ajoute toutes les propriétés ci-dessous.
     return {
